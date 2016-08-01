@@ -65,9 +65,9 @@ use yii\web\UnsupportedMediaTypeHttpException;
  *     return [
  *         [
  *             'class' => 'yii\filters\ContentNegotiator',
- *             'only' => ['view', 'index'],  // in a controller
+ *             'only' => ['view', 'Index'],  // in a controller
  *             // if in a module, use the following IDs for user actions
- *             // 'only' => ['user/view', 'user/index']
+ *             // 'only' => ['user/view', 'user/Index']
  *             'formats' => [
  *                 'application/json' => Response::FORMAT_JSON,
  *             ],

@@ -138,7 +138,7 @@ class Container extends Component
      * @param string $class the class name or an alias name (e.g. `foo`) that was previously registered via [[set()]]
      * or [[setSingleton()]].
      * @param array $params a list of constructor parameter values. The parameters should be provided in the order
-     * they appear in the constructor declaration. If you want to skip some parameters, you should index the remaining
+     * they appear in the constructor declaration. If you want to skip some parameters, you should Index the remaining
      * ones with the integers that represent their positions in the constructor parameter list.
      * @param array $config a list of name-value pairs that will be used to initialize the object properties.
      * @return object an instance of the requested class.

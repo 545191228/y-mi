@@ -46,7 +46,7 @@ class UrlManager extends Component
      * @var boolean whether to enable pretty URLs. Instead of putting all parameters in the query
      * string part of a URL, pretty URLs allow using path info to represent some of the parameters
      * and can thus produce more user-friendly URLs, such as "/news/Yii-is-released", instead of
-     * "/index.php?r=news%2Fview&id=100".
+     * "/Index.php?r=news%2Fview&id=100".
      */
     public $enablePrettyUrl = false;
     /**
@@ -72,7 +72,7 @@ class UrlManager extends Component
      * You can do that  by prepending it to the pattern, separated by space.
      * For example, `'PUT post/<id:\d+>' => 'post/update'`.
      * You may specify multiple verbs by separating them with comma
-     * like this: `'POST,PUT post/index' => 'post/create'`.
+     * like this: `'POST,PUT post/Index' => 'post/create'`.
      * The supported verbs in the shortcut format are: GET, HEAD, POST, PUT, PATCH and DELETE.
      * Note that [[UrlRule::mode|mode]] will be set to PARSING_ONLY when specifying verb in this way
      * so you normally would not specify a verb for normal GET request.
@@ -81,10 +81,10 @@ class UrlManager extends Component
      *
      * ```php
      * [
-     *     'dashboard' => 'site/index',
+     *     'dashboard' => 'site/Index',
      *
      *     'POST <controller:[\w-]+>s' => '<controller>/create',
-     *     '<controller:[\w-]+>s' => '<controller>/index',
+     *     '<controller:[\w-]+>s' => '<controller>/Index',
      *
      *     'PUT <controller:[\w-]+>/<id:\d+>'    => '<controller>/update',
      *     'DELETE <controller:[\w-]+>/<id:\d+>' => '<controller>/delete',
@@ -283,21 +283,21 @@ class UrlManager extends Component
     /**
      * Creates a URL using the given route and query parameters.
      *
-     * You may specify the route as a string, e.g., `site/index`. You may also use an array
+     * You may specify the route as a string, e.g., `site/Index`. You may also use an array
      * if you want to specify additional query parameters for the URL being created. The
      * array format must be:
      *
      * ```php
-     * // generates: /index.php?r=site%2Findex&param1=value1&param2=value2
-     * ['site/index', 'param1' => 'value1', 'param2' => 'value2']
+     * // generates: /Index.php?r=site%2Findex&param1=value1&param2=value2
+     * ['site/Index', 'param1' => 'value1', 'param2' => 'value2']
      * ```
      *
      * If you want to create a URL with an anchor, you can use the array format with a `#` parameter.
      * For example,
      *
      * ```php
-     * // generates: /index.php?r=site%2Findex&param1=value1#name
-     * ['site/index', 'param1' => 'value1', '#' => 'name']
+     * // generates: /Index.php?r=site%2Findex&param1=value1#name
+     * ['site/Index', 'param1' => 'value1', '#' => 'name']
      * ```
      *
      * The URL created is a relative one. Use [[createAbsoluteUrl()]] to create an absolute URL.
@@ -305,8 +305,8 @@ class UrlManager extends Component
      * Note that unlike [[\yii\helpers\Url::toRoute()]], this method always treats the given route
      * as an absolute route.
      *
-     * @param string|array $params use a string to represent a route (e.g. `site/index`),
-     * or an array to represent a route with query parameters (e.g. `['site/index', 'param1' => 'value1']`).
+     * @param string|array $params use a string to represent a route (e.g. `site/Index`),
+     * or an array to represent a route with query parameters (e.g. `['site/Index', 'param1' => 'value1']`).
      * @return string the created URL
      */
     public function createUrl($params)
@@ -380,7 +380,7 @@ class UrlManager extends Component
     /**
      * Get URL from internal cache if exists
      * @param string $cacheKey generated cache key to store data.
-     * @param string $route the route (e.g. `site/index`).
+     * @param string $route the route (e.g. `site/Index`).
      * @param array $params rule params.
      * @return boolean|string the created URL
      * @see createUrl()
@@ -420,8 +420,8 @@ class UrlManager extends Component
      * Note that unlike [[\yii\helpers\Url::toRoute()]], this method always treats the given route
      * as an absolute route.
      *
-     * @param string|array $params use a string to represent a route (e.g. `site/index`),
-     * or an array to represent a route with query parameters (e.g. `['site/index', 'param1' => 'value1']`).
+     * @param string|array $params use a string to represent a route (e.g. `site/Index`),
+     * or an array to represent a route with query parameters (e.g. `['site/Index', 'param1' => 'value1']`).
      * @param string $scheme the scheme to use for the url (either `http` or `https`). If not specified
      * the scheme of the current request will be used.
      * @return string the created URL

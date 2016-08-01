@@ -26,7 +26,7 @@ use yii\base\Action;
  *     return [
  *         [
  *             'class' => 'yii\filters\HttpCache',
- *             'only' => ['index'],
+ *             'only' => ['Index'],
  *             'lastModified' => function ($action, $params) {
  *                 $q = new \yii\db\Query();
  *                 return $q->from('user')->max('updated_at');

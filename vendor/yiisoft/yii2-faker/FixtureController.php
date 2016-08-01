@@ -39,7 +39,7 @@ use yii\helpers\VarDumper;
  *     'name' => $faker->firstName,
  *     'phone' => $faker->phoneNumber,
  *     'city' => $faker->city,
- *     'password' => Yii::$app->getSecurity()->generatePasswordHash('password_' . $index),
+ *     'password' => Yii::$app->getSecurity()->generatePasswordHash('password_' . $Index),
  *     'auth_key' => Yii::$app->getSecurity()->generateRandomString(),
  *     'intro' => $faker->sentence(7, true),  // generate a sentence with 7 words
  * ];
@@ -48,7 +48,7 @@ use yii\helpers\VarDumper;
  * If you use callback as an attribute value it will be called with the following three parameters:
  *
  * - `$faker`: the Faker generator instance
- * - `$index`: the current fixture index. For example if user need to generate 3 fixtures for user table, it will be 0..2.
+ * - `$Index`: the current fixture Index. For example if user need to generate 3 fixtures for user table, it will be 0..2.
  *
  * After you set all needed fields in callback, you need to return $fixture array back from the callback.
  *
@@ -417,12 +417,12 @@ class FixtureController extends \yii\console\controllers\FixtureController
     /**
      * Generates fixture from given template
      * @param string $_template_ the fixture template file
-     * @param integer $index the current fixture index
+     * @param integer $index the current fixture Index
      * @return array fixture
      */
     public function generateFixture($_template_, $index)
     {
-        // $faker and $index are exposed to the template file
+        // $faker and $Index are exposed to the template file
         $faker = $this->getGenerator();
         return require($_template_);
     }

@@ -32,7 +32,7 @@ interface ActiveQueryInterface extends QueryInterface
     /**
      * Sets the [[indexBy]] property.
      * @param string|callable $column the name of the column by which the query results should be indexed by.
-     * This can also be a callable (e.g. anonymous function) that returns the index value based on the given
+     * This can also be a callable (e.g. anonymous function) that returns the Index value based on the given
      * row or model data. The signature of the callable should be:
      *
      * ```php
@@ -40,7 +40,7 @@ interface ActiveQueryInterface extends QueryInterface
      * // or an array of column values when `asArray` is true.
      * function ($model)
      * {
-     *     // return the index value corresponding to $model
+     *     // return the Index value corresponding to $model
      * }
      * ```
      *

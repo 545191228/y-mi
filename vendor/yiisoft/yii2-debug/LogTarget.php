@@ -59,14 +59,14 @@ class LogTarget extends Target
             @chmod($dataFile, $this->module->fileMode);
         }
 
-        $indexFile = "$path/index.data";
+        $indexFile = "$path/Index.data";
         $this->updateIndexFile($indexFile, $summary);
     }
 
     /**
-     * Updates index file with summary log data
+     * Updates Index file with summary log data
      *
-     * @param string $indexFile path to index file
+     * @param string $indexFile path to Index file
      * @param array $summary summary log data
      * @throws \yii\base\InvalidConfigException
      */
@@ -74,7 +74,7 @@ class LogTarget extends Target
     {
         touch($indexFile);
         if (($fp = @fopen($indexFile, 'r+')) === false) {
-            throw new InvalidConfigException("Unable to open debug data index file: $indexFile");
+            throw new InvalidConfigException("Unable to open debug data Index file: $indexFile");
         }
         @flock($fp, LOCK_EX);
         $manifest = '';
@@ -82,7 +82,7 @@ class LogTarget extends Target
             $manifest .= $buffer;
         }
         if (!feof($fp) || empty($manifest)) {
-            // error while reading index data, ignore and create new
+            // error while reading Index data, ignore and create new
             $manifest = [];
         } else {
             $manifest = unserialize($manifest);

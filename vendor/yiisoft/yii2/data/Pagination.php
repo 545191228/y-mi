@@ -36,7 +36,7 @@ use yii\web\Request;
  *         ->limit($pages->limit)
  *         ->all();
  *
- *     return $this->render('index', [
+ *     return $this->render('Index', [
  *          'models' => $models,
  *          'pages' => $pages,
  *     ]);
@@ -79,7 +79,7 @@ class Pagination extends Object implements Linkable
     const LINK_LAST = 'last';
 
     /**
-     * @var string name of the parameter storing the current page index.
+     * @var string name of the parameter storing the current page Index.
      * @see params
      */
     public $pageParam = 'page';
@@ -177,7 +177,7 @@ class Pagination extends Object implements Linkable
 
     /**
      * Sets the current page number.
-     * @param integer $value the zero-based index of the current page.
+     * @param integer $value the zero-based Index of the current page.
      * @param boolean $validatePage whether to validate the page number. Note that in order
      * to validate the page number, both [[validatePage]] and this parameter must be true.
      */

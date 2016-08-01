@@ -105,7 +105,7 @@ var Bloodhound = (function() {
       this.clear();
 
       (this.initPromise = this._loadPrefetch())
-      .done(addLocalToIndex); // local must be added to index after prefetch
+      .done(addLocalToIndex); // local must be added to Index after prefetch
 
       return this.initPromise;
 

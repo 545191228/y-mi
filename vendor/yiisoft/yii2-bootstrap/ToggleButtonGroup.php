@@ -82,7 +82,7 @@ class ToggleButtonGroup extends InputWidget
 
     /**
      * Default callback for checkbox/radio list item rendering.
-     * @param integer $index item index.
+     * @param integer $index item Index.
      * @param string $label item label.
      * @param string $name input name.
      * @param boolean $checked whether value is checked or not.

@@ -30,7 +30,7 @@ use yii\web\CompositeUrlRule;
  * - `'DELETE users/<id>' => 'user/delete'`: delete a user
  * - `'GET,HEAD users/<id>' => 'user/view'`: return the details/overview/options of a user
  * - `'POST users' => 'user/create'`: create a new user
- * - `'GET,HEAD users' => 'user/index'`: return a list/overview/options of users
+ * - `'GET,HEAD users' => 'user/Index'`: return a list/overview/options of users
  * - `'users/<id>' => 'user/options'`: process all unhandled verbs of a user
  * - `'users' => 'user/options'`: process all unhandled verbs of user collection
  *
@@ -117,7 +117,7 @@ class UrlRule extends CompositeUrlRule
         'DELETE {id}' => 'delete',
         'GET,HEAD {id}' => 'view',
         'POST' => 'create',
-        'GET,HEAD' => 'index',
+        'GET,HEAD' => 'Index',
         '{id}' => 'options',
         '' => 'options',
     ];

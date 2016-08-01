@@ -62,7 +62,7 @@ class DbCache extends Cache
      * - PostgreSQL: BYTEA
      * - MSSQL: BLOB
      *
-     * When using DbCache in a production server, we recommend you create a DB index for the 'expire'
+     * When using DbCache in a production server, we recommend you create a DB Index for the 'expire'
      * column in the cache table to improve the performance.
      */
     public $cacheTable = '{{%cache}}';

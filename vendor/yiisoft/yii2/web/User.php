@@ -386,7 +386,7 @@ class User extends Component
      * the name-value pairs are GET parameters used to construct the URL. For example,
      *
      * ```php
-     * ['admin/index', 'ref' => 1]
+     * ['admin/Index', 'ref' => 1]
      * ```
      */
     public function setReturnUrl($url)

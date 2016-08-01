@@ -139,12 +139,12 @@ var Menu = (function() {
       $oldCursor = this.getActiveSelectable();
       $selectables = this._getSelectables();
 
-      // shifting before and after modulo to deal with -1 index
+      // shifting before and after modulo to deal with -1 Index
       oldIndex = $oldCursor ? $selectables.index($oldCursor) : -1;
       newIndex = oldIndex + delta;
       newIndex = (newIndex + 1) % ($selectables.length + 1) - 1;
 
-      // wrap new index if less than -1
+      // wrap new Index if less than -1
       newIndex = newIndex < -1 ? $selectables.length - 1 : newIndex;
 
       return newIndex === -1 ? null : $selectables.eq(newIndex);

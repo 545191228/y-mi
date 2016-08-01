@@ -38,7 +38,7 @@ class HTMLPurifier_Injector_Linkify extends HTMLPurifier_Injector
 
         $token = array();
 
-        // $i = index
+        // $i = Index
         // $c = count
         // $l = is link
         for ($i = 0, $c = count($bits), $l = false; $i < $c; $i++, $l = !$l) {

@@ -33,8 +33,8 @@ class Column extends Object
     public $footer;
     /**
      * @var callable This is a callable that will be used to generate the content of each cell.
-     * The signature of the function should be the following: `function ($model, $key, $index, $column)`.
-     * Where `$model`, `$key`, and `$index` refer to the model, key and index of the row currently being rendered
+     * The signature of the function should be the following: `function ($model, $key, $Index, $column)`.
+     * Where `$model`, `$key`, and `$Index` refer to the model, key and Index of the row currently being rendered
      * and `$column` is a reference to the [[Column]] object.
      */
     public $content;
@@ -55,8 +55,8 @@ class Column extends Object
     /**
      * @var array|\Closure the HTML attributes for the data cell tag. This can either be an array of
      * attributes or an anonymous function ([[Closure]]) that returns such an array.
-     * The signature of the function should be the following: `function ($model, $key, $index, $column)`.
-     * Where `$model`, `$key`, and `$index` refer to the model, key and index of the row currently being rendered
+     * The signature of the function should be the following: `function ($model, $key, $Index, $column)`.
+     * Where `$model`, `$key`, and `$Index` refer to the model, key and Index of the row currently being rendered
      * and `$column` is a reference to the [[Column]] object.
      * A function may be used to assign different attributes to different rows based on the data in that row.
      *
@@ -95,7 +95,7 @@ class Column extends Object
      * Renders a data cell.
      * @param mixed $model the data model being rendered
      * @param mixed $key the key associated with the data model
-     * @param integer $index the zero-based index of the data item among the item array returned by [[GridView::dataProvider]].
+     * @param integer $index the zero-based Index of the data item among the item array returned by [[GridView::dataProvider]].
      * @return string the rendering result
      */
     public function renderDataCell($model, $key, $index)
@@ -153,7 +153,7 @@ class Column extends Object
      * Renders the data cell content.
      * @param mixed $model the data model
      * @param mixed $key the key associated with the data model
-     * @param integer $index the zero-based index of the data model among the models array returned by [[GridView::dataProvider]].
+     * @param integer $index the zero-based Index of the data model among the models array returned by [[GridView::dataProvider]].
      * @return string the rendering result
      */
     protected function renderDataCellContent($model, $key, $index)

@@ -327,7 +327,7 @@ SQL;
     /**
      * Gets information about given table unique indexes.
      * @param TableSchema $table the table metadata
-     * @return array with index and column names
+     * @return array with Index and column names
      */
     protected function getUniqueIndexInformation($table)
     {

@@ -17,7 +17,7 @@ use yii\web\ForbiddenHttpException;
  * The class of the ActiveRecord should be specified via [[modelClass]], which must implement [[\yii\db\ActiveRecordInterface]].
  * By default, the following actions are supported:
  *
- * - `index`: list of models
+ * - `Index`: list of models
  * - `view`: return the details of a model
  * - `create`: create a new model
  * - `update`: update an existing model
@@ -70,7 +70,7 @@ class ActiveController extends Controller
     public function actions()
     {
         return [
-            'index' => [
+            'Index' => [
                 'class' => 'yii\rest\IndexAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
@@ -109,7 +109,7 @@ class ActiveController extends Controller
     protected function verbs()
     {
         return [
-            'index' => ['GET', 'HEAD'],
+            'Index' => ['GET', 'HEAD'],
             'view' => ['GET', 'HEAD'],
             'create' => ['POST'],
             'update' => ['PUT', 'PATCH'],

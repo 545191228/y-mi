@@ -6,7 +6,7 @@ return [
     'controllerNamespace' => 'common\controllers',
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-home',
+            'csrfParam' => '_csrf-common',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

@@ -41,7 +41,7 @@ class Generator extends \yii\gii\Generator
     /**
      * @var string list of action IDs separated by commas or spaces
      */
-    public $actions = 'index';
+    public $actions = 'Index';
 
 
     /**
@@ -122,7 +122,7 @@ class Generator extends \yii\gii\Generator
             'actions' => 'Provide one or multiple action IDs to generate empty action method(s) in the controller. Separate multiple action IDs with commas or spaces.
                 Action IDs should be in lower case. For example:
                 <ul>
-                    <li><code>index</code> generates <code>actionIndex()</code></li>
+                    <li><code>Index</code> generates <code>actionIndex()</code></li>
                     <li><code>create-order</code> generates <code>actionCreateOrder()</code></li>
                 </ul>',
             'viewPath' => 'Specify the directory for storing the view scripts for the controller. You may use path alias here, e.g.,
@@ -138,8 +138,8 @@ class Generator extends \yii\gii\Generator
     public function successMessage()
     {
         $actions = $this->getActionIDs();
-        if (in_array('index', $actions)) {
-            $route = $this->getControllerID() . '/index';
+        if (in_array('Index', $actions)) {
+            $route = $this->getControllerID() . '/Index';
         } else {
             $route = $this->getControllerID() . '/' . reset($actions);
         }

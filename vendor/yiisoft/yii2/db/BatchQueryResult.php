@@ -148,9 +148,9 @@ class BatchQueryResult extends Object implements \Iterator
     }
 
     /**
-     * Returns the index of the current dataset.
+     * Returns the Index of the current dataset.
      * This method is required by the interface [[\Iterator]].
-     * @return integer the index of the current row.
+     * @return integer the Index of the current row.
      */
     public function key()
     {

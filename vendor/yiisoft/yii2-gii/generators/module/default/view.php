@@ -2,7 +2,7 @@
 /* @var $this yii\web\View */
 /* @var $generator yii\gii\generators\module\Generator */
 ?>
-<div class="<?= $generator->moduleID . '-default-index' ?>">
+<div class="<?= $generator->moduleID . '-default-Index' ?>">
     <h1><?= "<?= " ?>$this->context->action->uniqueId ?></h1>
     <p>
         This is the view content for action "<?= "<?= " ?>$this->context->action->id ?>".

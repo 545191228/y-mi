@@ -43,7 +43,7 @@ use yii\web\Request;
  *         ->orderBy($sort->orders)
  *         ->all();
  *
- *     return $this->render('index', [
+ *     return $this->render('Index', [
  *          'models' => $models,
  *          'sort' => $sort,
  *     ]);

@@ -2,7 +2,7 @@
 define('ROOT_DIR' , dirname(__DIR__));
 define('VENDOR_DIR' , ROOT_DIR . '/vendor');
 define('PUBLIC_DIR' , ROOT_DIR . '/public');
-dir('COMMON_DIR' , ROOT_DIR . '/common');
+define('COMMON_DIR' , ROOT_DIR . '/common');
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');

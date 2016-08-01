@@ -129,7 +129,7 @@ class Swift_Mime_SimpleHeaderSet implements Swift_Mime_HeaderSet
     /**
      * Returns true if at least one header with the given $name exists.
      *
-     * If multiple headers match, the actual one may be specified by $index.
+     * If multiple headers match, the actual one may be specified by $Index.
      *
      * @param string $name
      * @param int    $index
@@ -145,7 +145,7 @@ class Swift_Mime_SimpleHeaderSet implements Swift_Mime_HeaderSet
         }
 
         if (func_num_args() < 2) {
-            // index was not specified, so we only need to check that there is at least one header value set
+            // Index was not specified, so we only need to check that there is at least one header value set
             return (bool) count($this->_headers[$lowerName]);
         }
 
@@ -158,7 +158,7 @@ class Swift_Mime_SimpleHeaderSet implements Swift_Mime_HeaderSet
      * The header may be a previously fetched header via {@link get()} or it may
      * be one that has been created separately.
      *
-     * If $index is specified, the header will be inserted into the set at this
+     * If $Index is specified, the header will be inserted into the set at this
      * offset.
      *
      * @param Swift_Mime_Header $header
@@ -172,7 +172,7 @@ class Swift_Mime_SimpleHeaderSet implements Swift_Mime_HeaderSet
     /**
      * Get the header with the given $name.
      *
-     * If multiple headers match, the actual one may be specified by $index.
+     * If multiple headers match, the actual one may be specified by $Index.
      * Returns NULL if none present.
      *
      * @param string $name
@@ -241,7 +241,7 @@ class Swift_Mime_SimpleHeaderSet implements Swift_Mime_HeaderSet
     /**
      * Remove the header with the given $name if it's set.
      *
-     * If multiple headers match, the actual one may be specified by $index.
+     * If multiple headers match, the actual one may be specified by $Index.
      *
      * @param string $name
      * @param int    $index

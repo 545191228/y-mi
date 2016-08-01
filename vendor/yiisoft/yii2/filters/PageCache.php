@@ -21,7 +21,7 @@ use yii\web\Response;
  * It is an action filter that can be added to a controller and handles the `beforeAction` event.
  *
  * To use PageCache, declare it in the `behaviors()` method of your controller class.
- * In the following example the filter will be applied to the `index` action and
+ * In the following example the filter will be applied to the `Index` action and
  * cache the whole page for maximum 60 seconds or until the count of entries in the post table changes.
  * It also stores different versions of the page depending on the application language.
  *
@@ -31,7 +31,7 @@ use yii\web\Response;
  *     return [
  *         'pageCache' => [
  *             'class' => 'yii\filters\PageCache',
- *             'only' => ['index'],
+ *             'only' => ['Index'],
  *             'duration' => 60,
  *             'dependency' => [
  *                 'class' => 'yii\caching\DbDependency',

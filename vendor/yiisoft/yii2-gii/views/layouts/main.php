@@ -24,13 +24,13 @@ $asset = yii\gii\GiiAsset::register($this);
         <?php
         NavBar::begin([
             'brandLabel' => Html::img($asset->baseUrl . '/logo.png'),
-            'brandUrl' => ['default/index'],
+            'brandUrl' => ['default/Index'],
             'options' => ['class' => 'navbar-inverse navbar-fixed-top'],
         ]);
         echo Nav::widget([
             'options' => ['class' => 'nav navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Home', 'url' => ['default/index']],
+                ['label' => 'Home', 'url' => ['default/Index']],
                 ['label' => 'Help', 'url' => 'http://www.yiiframework.com/doc-2.0/guide-tool-gii.html'],
                 ['label' => 'Application', 'url' => Yii::$app->homeUrl],
             ],

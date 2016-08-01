@@ -94,12 +94,12 @@ class GridView extends BaseListView
      * data model returned by [[dataProvider]]. It should have the following signature:
      *
      * ```php
-     * function ($model, $key, $index, $grid)
+     * function ($model, $key, $Index, $grid)
      * ```
      *
      * - `$model`: the current data model being rendered
      * - `$key`: the key value associated with the current data model
-     * - `$index`: the zero-based index of the data model in the model array returned by [[dataProvider]]
+     * - `$Index`: the zero-based Index of the data model in the model array returned by [[dataProvider]]
      * - `$grid`: the GridView object
      *
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
@@ -493,7 +493,7 @@ class GridView extends BaseListView
      * Renders a table row with the given data model and key.
      * @param mixed $model the data model to be rendered
      * @param mixed $key the key associated with the data model
-     * @param integer $index the zero-based index of the data model among the model array returned by [[dataProvider]].
+     * @param integer $index the zero-based Index of the data model among the model array returned by [[dataProvider]].
      * @return string the rendering result
      */
     public function renderTableRow($model, $key, $index)

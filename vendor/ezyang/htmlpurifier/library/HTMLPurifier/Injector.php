@@ -172,7 +172,7 @@ abstract class HTMLPurifier_Injector
      * you reach the end of the input tokens.
      * @warning Please prevent previous references from interfering with this
      *          functions by setting $i = null beforehand!
-     * @param int $i Current integer index variable for inputTokens
+     * @param int $i Current integer Index variable for inputTokens
      * @param HTMLPurifier_Token $current Current token variable.
      *          Do NOT use $token, as that variable is also a reference
      * @return bool
@@ -195,7 +195,7 @@ abstract class HTMLPurifier_Injector
      * Similar to _forward, but accepts a third parameter $nesting (which
      * should be initialized at 0) and stops when we hit the end tag
      * for the node $this->inputIndex starts in.
-     * @param int $i Current integer index variable for inputTokens
+     * @param int $i Current integer Index variable for inputTokens
      * @param HTMLPurifier_Token $current Current token variable.
      *          Do NOT use $token, as that variable is also a reference
      * @param int $nesting
@@ -226,7 +226,7 @@ abstract class HTMLPurifier_Injector
      * you reach the beginning of input tokens.
      * @warning Please prevent previous references from interfering with this
      *          functions by setting $i = null beforehand!
-     * @param int $i Current integer index variable for inputTokens
+     * @param int $i Current integer Index variable for inputTokens
      * @param HTMLPurifier_Token $current Current token variable.
      *          Do NOT use $token, as that variable is also a reference
      * @return bool

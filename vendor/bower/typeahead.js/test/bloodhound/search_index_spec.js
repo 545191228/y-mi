@@ -63,7 +63,7 @@ describe('SearchIndex', function() {
     expect(this.index.all()).toEqual(fixtures.data.simple);
   });
 
-  it('#reset should empty the search index', function() {
+  it('#reset should empty the search Index', function() {
     this.index.reset();
     expect(this.index.datums).toEqual([]);
     expect(this.index.trie.i).toEqual([]);

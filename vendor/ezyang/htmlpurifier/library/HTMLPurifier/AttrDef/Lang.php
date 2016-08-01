@@ -68,7 +68,7 @@ class HTMLPurifier_AttrDef_Lang extends HTMLPurifier_AttrDef
             return $new_string;
         }
 
-        // process all other subtags, index 2 and up
+        // process all other subtags, Index 2 and up
         for ($i = 2; $i < $num_subtags; $i++) {
             $length = strlen($subtags[$i]);
             if ($length == 0 || $length > 8 || !ctype_alnum($subtags[$i])) {

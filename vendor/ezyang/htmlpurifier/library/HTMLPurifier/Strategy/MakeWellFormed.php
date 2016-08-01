@@ -73,7 +73,7 @@ class HTMLPurifier_Strategy_MakeWellFormed extends HTMLPurifier_Strategy
         // used for autoclose early abortion
         $global_parent_allowed_elements = $definition->info_parent_def->child->getAllowedElements($config);
         $e = $context->get('ErrorCollector', true);
-        $i = false; // injector index
+        $i = false; // injector Index
         list($zipper, $token) = HTMLPurifier_Zipper::fromArray($tokens);
         if ($token === NULL) {
             return array();

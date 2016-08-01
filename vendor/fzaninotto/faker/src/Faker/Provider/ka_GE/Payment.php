@@ -6,7 +6,7 @@ class Payment extends \Faker\Provider\Payment
 {
 
     /**
-     * @see list of Georgian banks (2015-12-26), source: https://www.nbg.gov.ge/index.php?m=403
+     * @see list of Georgian banks (2015-12-26), source: https://www.nbg.gov.ge/Index.php?m=403
      */
     protected static $banks = array(
         'ბანკი რესპუბლიკა',

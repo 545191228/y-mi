@@ -272,7 +272,7 @@ class HTMLPurifier_Lexer
      *
      * @warning Though this is public in order to let the callback happen,
      *          calling it directly is not recommended.
-     * @param array $matches PCRE matches array, with index 0 the entire match
+     * @param array $matches PCRE matches array, with Index 0 the entire match
      *                  and 1 the inside of the CDATA section.
      * @return string Escaped internals of the CDATA section.
      */

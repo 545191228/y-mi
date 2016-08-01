@@ -46,9 +46,9 @@ class Controller extends Component implements ViewContextInterface
     public $module;
     /**
      * @var string the ID of the action that is used when the action ID is not specified
-     * in the request. Defaults to 'index'.
+     * in the request. Defaults to 'Index'.
      */
-    public $defaultAction = 'index';
+    public $defaultAction = 'Index';
     /**
      * @var null|string|false the name of the layout to be applied to this controller's views.
      * This property mainly affects the behavior of [[render()]].
@@ -339,12 +339,12 @@ class Controller extends Component implements ViewContextInterface
      *
      * The view to be rendered can be specified in one of the following formats:
      *
-     * - path alias (e.g. "@app/views/site/index");
-     * - absolute path within application (e.g. "//site/index"): the view name starts with double slashes.
+     * - path alias (e.g. "@app/views/site/Index");
+     * - absolute path within application (e.g. "//site/Index"): the view name starts with double slashes.
      *   The actual view file will be looked for under the [[Application::viewPath|view path]] of the application.
-     * - absolute path within module (e.g. "/site/index"): the view name starts with a single slash.
+     * - absolute path within module (e.g. "/site/Index"): the view name starts with a single slash.
      *   The actual view file will be looked for under the [[Module::viewPath|view path]] of [[module]].
-     * - relative path (e.g. "index"): the actual view file will be looked for under [[viewPath]].
+     * - relative path (e.g. "Index"): the actual view file will be looked for under [[viewPath]].
      *
      * To determine which layout should be applied, the following two steps are conducted:
      *

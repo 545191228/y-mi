@@ -835,9 +835,9 @@ class Model extends Component implements IteratorAggregate, ArrayAccess, Arrayab
     /**
      * Populates a set of models with the data from end user.
      * This method is mainly used to collect tabular data input.
-     * The data to be loaded for each model is `$data[formName][index]`, where `formName`
-     * refers to the value of [[formName()]], and `index` the index of the model in the `$models` array.
-     * If [[formName()]] is empty, `$data[index]` will be used to populate each model.
+     * The data to be loaded for each model is `$data[formName][Index]`, where `formName`
+     * refers to the value of [[formName()]], and `Index` the Index of the model in the `$models` array.
+     * If [[formName()]] is empty, `$data[Index]` will be used to populate each model.
      * The data being populated to each model is subject to the safety check by [[setAttributes()]].
      * @param array $models the models to be populated. Note that all models should have the same class.
      * @param array $data the data array. This is usually `$_POST` or `$_GET`, but can also be any valid array

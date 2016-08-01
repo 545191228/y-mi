@@ -129,7 +129,7 @@ abstract class Parser
 	}
 
 	/**
-	 * Given a set of lines and an index of a current line it uses the registed block types to
+	 * Given a set of lines and an Index of a current line it uses the registed block types to
 	 * detect the type of this line.
 	 * @param array $lines
 	 * @param integer $current

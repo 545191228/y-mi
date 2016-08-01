@@ -15,14 +15,14 @@ abstract class Text extends Base
      * Generate a text string by the Markov chain algorithm.
      *
      * Depending on the $maxNbChars, returns a random valid looking text. The algorithm
-     * generates a weighted table with the specified number of words as the index and the
+     * generates a weighted table with the specified number of words as the Index and the
      * possible following words as the value.
      *
      * @example 'Alice, swallowing down her flamingo, and began by taking the little golden key'
      * @param integer $maxNbChars Maximum number of characters the text should contain (minimum: 10)
      * @param integer $indexSize  Determines how many words are considered for the generation of the next word.
      *                             The minimum is 1, and it produces the higher level of randomness, although the
-     *                             generated text usually doesn't make sense. Higher index sizes (up to 5)
+     *                             generated text usually doesn't make sense. Higher Index sizes (up to 5)
      *                             produce more correct text, at the price of less randomness.
      * @return string
      */
@@ -50,7 +50,7 @@ abstract class Text extends Base
             // fetch a random word to append
             $word = static::randomElement($words[$next]);
 
-            // calculate next index
+            // calculate next Index
             $currentWords = static::explode($next);
             $currentWords[] = $word;
             array_shift($currentWords);
