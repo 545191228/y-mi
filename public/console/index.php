@@ -2,12 +2,12 @@
 require "../BaseInit.php";
 
 // 加载应用配置
-require(COMMON_DIR . '/config/bootstrap.php');
-require(ROOT_DIR . '/home/config/bootstrap.php');
+require(YMI_COMMON_PATH . '/config/bootstrap.php');
+require(YMI_ROOT_PATH . '/home/config/bootstrap.php');
 
 $config = yii\helpers\ArrayHelper::merge(
-    require(ROOT_DIR . '/home/config/main.php'),
-    require(COMMON_DIR . '/common/config/main.php')
+    require(YMI_COMMON_PATH . '/common/config/main.php'),
+    require(YMI_ROOT_PATH . '/home/config/main.php')
 );
 
 // 创建、配置、运行一个应用
