@@ -8,6 +8,7 @@ return [
         'gii'
     ],
     'controllerNamespace' => 'common\controllers',
+    'defaultRoute' => 'site',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-common',
