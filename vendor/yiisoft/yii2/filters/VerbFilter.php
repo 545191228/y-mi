@@ -30,7 +30,7 @@ use yii\web\MethodNotAllowedHttpException;
  *         'verbs' => [
  *             'class' => \yii\filters\VerbFilter::className(),
  *             'actions' => [
- *                 'Index'  => ['get'],
+ *                 'index'  => ['get'],
  *                 'view'   => ['get'],
  *                 'create' => ['get', 'post'],
  *                 'update' => ['get', 'put', 'post'],

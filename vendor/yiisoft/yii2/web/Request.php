@@ -1115,7 +1115,7 @@ class Request extends \yii\base\Request
         }
 
         usort($accepts, function ($a, $b) {
-            $a = $a['q']; // Index, name, q
+            $a = $a['q']; // index, name, q
             $b = $b['q'];
             if ($a[2] > $b[2]) {
                 return -1;

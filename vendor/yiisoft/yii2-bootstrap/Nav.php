@@ -21,7 +21,7 @@ use yii\helpers\ArrayHelper;
  *     'items' => [
  *         [
  *             'label' => 'Home',
- *             'url' => ['site/Index'],
+ *             'url' => ['site/index'],
  *             'linkOptions' => [...],
  *         ],
  *         [

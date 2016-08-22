@@ -876,10 +876,10 @@ class BaseHtml
      *   corresponding to a single item in $items. The signature of this callback must be:
      *
      *   ```php
-     *   function ($Index, $label, $name, $checked, $value)
+     *   function ($index, $label, $name, $checked, $value)
      *   ```
      *
-     *   where $Index is the zero-based Index of the checkbox in the whole list; $label
+     *   where $index is the zero-based index of the checkbox in the whole list; $label
      *   is the label for the checkbox; and $name, $value and $checked represent the name,
      *   value and the checked status of the checkbox input, respectively.
      *
@@ -956,10 +956,10 @@ class BaseHtml
      *   corresponding to a single item in $items. The signature of this callback must be:
      *
      *   ```php
-     *   function ($Index, $label, $name, $checked, $value)
+     *   function ($index, $label, $name, $checked, $value)
      *   ```
      *
-     *   where $Index is the zero-based Index of the radio button in the whole list; $label
+     *   where $index is the zero-based index of the radio button in the whole list; $label
      *   is the label for the radio button; and $name, $value and $checked represent the name,
      *   value and the checked status of the radio button input, respectively.
      *
@@ -1018,10 +1018,10 @@ class BaseHtml
      *   The signature of this callback must be:
      *
      *   ```php
-     *   function ($item, $Index)
+     *   function ($item, $index)
      *   ```
      *
-     *   where $Index is the array key corresponding to `$item` in `$items`. The callback should return
+     *   where $index is the array key corresponding to `$item` in `$items`. The callback should return
      *   the whole list item tag.
      *
      * See [[renderTagAttributes()]] for details on how attributes are being rendered.
@@ -1069,10 +1069,10 @@ class BaseHtml
      *   The signature of this callback must be:
      *
      *   ```php
-     *   function ($item, $Index)
+     *   function ($item, $index)
      *   ```
      *
-     *   where $Index is the array key corresponding to `$item` in `$items`. The callback should return
+     *   where $index is the array key corresponding to `$item` in `$items`. The callback should return
      *   the whole list item tag.
      *
      * See [[renderTagAttributes()]] for details on how attributes are being rendered.
@@ -1573,10 +1573,10 @@ class BaseHtml
      *   corresponding to a single item in $items. The signature of this callback must be:
      *
      *   ```php
-     *   function ($Index, $label, $name, $checked, $value)
+     *   function ($index, $label, $name, $checked, $value)
      *   ```
      *
-     *   where $Index is the zero-based Index of the checkbox in the whole list; $label
+     *   where $index is the zero-based index of the checkbox in the whole list; $label
      *   is the label for the checkbox; and $name, $value and $checked represent the name,
      *   value and the checked status of the checkbox input.
      *
@@ -1615,10 +1615,10 @@ class BaseHtml
      *   corresponding to a single item in $items. The signature of this callback must be:
      *
      *   ```php
-     *   function ($Index, $label, $name, $checked, $value)
+     *   function ($index, $label, $name, $checked, $value)
      *   ```
      *
-     *   where $Index is the zero-based Index of the radio button in the whole list; $label
+     *   where $index is the zero-based index of the radio button in the whole list; $label
      *   is the label for the radio button; and $name, $value and $checked represent the name,
      *   value and the checked status of the radio button input.
      *

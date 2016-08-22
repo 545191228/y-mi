@@ -60,8 +60,8 @@ class DataColumn extends Column
      * @var string|\Closure an anonymous function or a string that is used to determine the value to display in the current column.
      *
      * If this is an anonymous function, it will be called for each row and the return value will be used as the value to
-     * display for every data model. The signature of this function should be: `function ($model, $key, $Index, $column)`.
-     * Where `$model`, `$key`, and `$Index` refer to the model, key and Index of the row currently being rendered
+     * display for every data model. The signature of this function should be: `function ($model, $key, $index, $column)`.
+     * Where `$model`, `$key`, and `$index` refer to the model, key and index of the row currently being rendered
      * and `$column` is a reference to the [[DataColumn]] object.
      *
      * You may also set this property to a string representing the attribute name to be displayed in this column.
@@ -199,7 +199,7 @@ class DataColumn extends Column
      * Returns the data cell value.
      * @param mixed $model the data model
      * @param mixed $key the key associated with the data model
-     * @param integer $index the zero-based Index of the data model among the models array returned by [[GridView::dataProvider]].
+     * @param integer $index the zero-based index of the data model among the models array returned by [[GridView::dataProvider]].
      * @return string the data cell value
      */
     public function getDataCellValue($model, $key, $index)

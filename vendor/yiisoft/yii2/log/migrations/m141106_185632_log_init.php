@@ -14,7 +14,7 @@ use yii\log\DbTarget;
  *
  * The indexes declared are not required. They are mainly used to improve the performance
  * of some queries about message levels and categories. Depending on your actual needs, you may
- * want to create additional indexes (e.g. Index on `log_time`).
+ * want to create additional indexes (e.g. index on `log_time`).
  *
  * @author Alexander Makarov <sam@rmcreative.ru>
  * @since 2.0.1

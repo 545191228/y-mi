@@ -91,7 +91,7 @@ class ActionColumn extends Column
      * The callbacks must use the following signature:
      *
      * ```php
-     * function ($model, $key, $Index) {
+     * function ($model, $key, $index) {
      *     return $model->status === 'editable';
      * }
      * ```
@@ -173,7 +173,7 @@ class ActionColumn extends Column
      * @param string $action the button name (or action ID)
      * @param \yii\db\ActiveRecord $model the data model
      * @param mixed $key the key associated with the data model
-     * @param integer $index the current row Index
+     * @param integer $index the current row index
      * @return string the created URL
      */
     public function createUrl($action, $model, $key, $index)

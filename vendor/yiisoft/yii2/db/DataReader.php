@@ -113,7 +113,7 @@ class DataReader extends \yii\base\Object implements \Iterator, \Countable
 
     /**
      * Returns a single column from the next row of a result set.
-     * @param integer $columnIndex zero-based column Index
+     * @param integer $columnIndex zero-based column index
      * @return mixed the column of the current row, false if no more rows available
      */
     public function readColumn($columnIndex)
@@ -226,9 +226,9 @@ class DataReader extends \yii\base\Object implements \Iterator, \Countable
     }
 
     /**
-     * Returns the Index of the current row.
+     * Returns the index of the current row.
      * This method is required by the interface [[\Iterator]].
-     * @return integer the Index of the current row.
+     * @return integer the index of the current row.
      */
     public function key()
     {

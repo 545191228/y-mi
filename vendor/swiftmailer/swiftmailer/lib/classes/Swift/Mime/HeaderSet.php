@@ -67,7 +67,7 @@ interface Swift_Mime_HeaderSet extends Swift_Mime_CharsetObserver
     /**
      * Returns true if at least one header with the given $name exists.
      *
-     * If multiple headers match, the actual one may be specified by $Index.
+     * If multiple headers match, the actual one may be specified by $index.
      *
      * @param string $name
      * @param int    $index
@@ -82,7 +82,7 @@ interface Swift_Mime_HeaderSet extends Swift_Mime_CharsetObserver
      * The header may be a previously fetched header via {@link get()} or it may
      * be one that has been created separately.
      *
-     * If $Index is specified, the header will be inserted into the set at this
+     * If $index is specified, the header will be inserted into the set at this
      * offset.
      *
      * @param Swift_Mime_Header $header
@@ -92,7 +92,7 @@ interface Swift_Mime_HeaderSet extends Swift_Mime_CharsetObserver
 
     /**
      * Get the header with the given $name.
-     * If multiple headers match, the actual one may be specified by $Index.
+     * If multiple headers match, the actual one may be specified by $index.
      * Returns NULL if none present.
      *
      * @param string $name
@@ -121,7 +121,7 @@ interface Swift_Mime_HeaderSet extends Swift_Mime_CharsetObserver
     /**
      * Remove the header with the given $name if it's set.
      *
-     * If multiple headers match, the actual one may be specified by $Index.
+     * If multiple headers match, the actual one may be specified by $index.
      *
      * @param string $name
      * @param int    $index

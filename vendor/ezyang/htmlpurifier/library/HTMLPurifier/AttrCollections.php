@@ -52,7 +52,7 @@ class HTMLPurifier_AttrCollections
 
     /**
      * Takes a reference to an attribute associative array and performs
-     * all inclusions specified by the zero Index.
+     * all inclusions specified by the zero index.
      * @param array &$attr Reference to attribute array
      */
     public function performInclusions(&$attr)

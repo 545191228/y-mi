@@ -9,7 +9,7 @@ class HTMLPurifier_HTMLModule_Tidy extends HTMLPurifier_HTMLModule
 {
     /**
      * List of supported levels.
-     * Index zero is a special case "no fixes" level.
+     * index zero is a special case "no fixes" level.
      * @type array
      */
     public $levels = array(0 => 'none', 'light', 'medium', 'heavy');

@@ -758,7 +758,7 @@ class HTMLPurifier_Config
      * via ConfigForm
      *
      * @param array $array $_GET or $_POST array to import
-     * @param string|bool $index Index/name that the config variables are in
+     * @param string|bool $index index/name that the config variables are in
      * @param array|bool $allowed List of allowed namespaces/directives
      * @param bool $mq_fix Boolean whether or not to enable magic quotes fix
      * @param HTMLPurifier_ConfigSchema $schema Schema to use, if not global copy
@@ -776,7 +776,7 @@ class HTMLPurifier_Config
      * Merges in configuration values from $_GET/$_POST to object. NOT STATIC.
      *
      * @param array $array $_GET or $_POST array to import
-     * @param string|bool $index Index/name that the config variables are in
+     * @param string|bool $index index/name that the config variables are in
      * @param array|bool $allowed List of allowed namespaces/directives
      * @param bool $mq_fix Boolean whether or not to enable magic quotes fix
      */
@@ -791,7 +791,7 @@ class HTMLPurifier_Config
      * strict parts of HTMLPurifier_Config
      *
      * @param array $array $_GET or $_POST array to import
-     * @param string|bool $index Index/name that the config variables are in
+     * @param string|bool $index index/name that the config variables are in
      * @param array|bool $allowed List of allowed namespaces/directives
      * @param bool $mq_fix Boolean whether or not to enable magic quotes fix
      * @param HTMLPurifier_ConfigSchema $schema Schema to use, if not global copy

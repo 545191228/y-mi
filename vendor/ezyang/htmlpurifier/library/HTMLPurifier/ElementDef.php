@@ -23,7 +23,7 @@ class HTMLPurifier_ElementDef
      * @note Before being processed by HTMLPurifier_AttrCollections
      *       when modules are finalized during
      *       HTMLPurifier_HTMLDefinition->setup(), this array may also
-     *       contain an array at Index 0 that indicates which attribute
+     *       contain an array at index 0 that indicates which attribute
      *       collections to load into the full array. It may also
      *       contain string indentifiers in lieu of HTMLPurifier_AttrDef,
      *       see HTMLPurifier_AttrTypes on how they are expanded during
@@ -36,8 +36,8 @@ class HTMLPurifier_ElementDef
     // the final generated config. This is by design; a previous version
     // used an associated list of attr_transform, but it was extremely
     // easy to accidentally override other attribute transforms by
-    // forgetting to specify an Index (and just using 0.)  While we
-    // could check this by checking the Index number and complaining,
+    // forgetting to specify an index (and just using 0.)  While we
+    // could check this by checking the index number and complaining,
     // there is a second problem which is that it is not at all easy to
     // tell when something is getting overridden. Combine this with a
     // codebase where this isn't really being used, and it's perfect for

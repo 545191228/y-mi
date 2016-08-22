@@ -64,7 +64,7 @@ class DefaultController extends Controller
         $tag = reset($tags);
         $this->loadData($tag);
 
-        return $this->render('Index', [
+        return $this->render('index', [
             'panels' => $this->module->panels,
             'dataProvider' => $dataProvider,
             'searchModel' => $searchModel,
@@ -124,7 +124,7 @@ class DefaultController extends Controller
             if ($forceReload) {
                 clearstatcache();
             }
-            $indexFile = $this->module->dataPath . '/Index.data';
+            $indexFile = $this->module->dataPath . '/index.data';
 
             $content = '';
             $fp = @fopen($indexFile, 'r');

@@ -2656,7 +2656,7 @@ class HTML5TreeConstructer
 
                             /* Act as if a stream of character tokens had been seen. */
                             $this->insertText(
-                                'This is a searchable Index. ' .
+                                'This is a searchable index. ' .
                                 'Insert your search keywords here: '
                             );
 
@@ -2678,7 +2678,7 @@ class HTML5TreeConstructer
                             /* Act as if a stream of character tokens had been seen
                             (see below for what they should say). */
                             $this->insertText(
-                                'This is a searchable Index. ' .
+                                'This is a searchable index. ' .
                                 'Insert your search keywords here: '
                             );
 

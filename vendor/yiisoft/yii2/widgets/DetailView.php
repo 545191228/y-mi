@@ -83,11 +83,11 @@ class DetailView extends Widget
      * If a callback (e.g. an anonymous function), the signature must be as follows:
      *
      * ```php
-     * function ($attribute, $Index, $widget)
+     * function ($attribute, $index, $widget)
      * ```
      *
-     * where `$attribute` refer to the specification of the attribute being rendered, `$Index` is the zero-based
-     * Index of the attribute in the [[attributes]] array, and `$widget` refers to this widget instance.
+     * where `$attribute` refer to the specification of the attribute being rendered, `$index` is the zero-based
+     * index of the attribute in the [[attributes]] array, and `$widget` refers to this widget instance.
      */
     public $template = '<tr><th>{label}</th><td>{value}</td></tr>';
     /**
@@ -148,7 +148,7 @@ class DetailView extends Widget
     /**
      * Renders a single attribute.
      * @param array $attribute the specification of the attribute to be rendered.
-     * @param integer $index the zero-based Index of the attribute in the [[attributes]] array
+     * @param integer $index the zero-based index of the attribute in the [[attributes]] array
      * @return string the rendering result
      */
     protected function renderAttribute($attribute, $index)

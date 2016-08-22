@@ -48,7 +48,7 @@ describe('Bloodhound', function() {
       expect(this.bloodhound._initialize.callCount).toBe(2);
     });
 
-    it('should clear the Index', function() {
+    it('should clear the index', function() {
       this.bloodhound = build({ initialize: false, prefetch: '/prefetch' });
       spyOn(this.bloodhound, 'clear');
       this.bloodhound.initialize();
@@ -105,7 +105,7 @@ describe('Bloodhound', function() {
   });
 
   describe('#add', function() {
-    it('should add datums to search Index', function() {
+    it('should add datums to search index', function() {
       var spy = jasmine.createSpy();
 
       this.bloodhound = build().add(fixtures.data.simple);
@@ -151,7 +151,7 @@ describe('Bloodhound', function() {
   });
 
   describe('#clear', function() {
-    it('should remove all datums to search Index', function() {
+    it('should remove all datums to search index', function() {
       var spy = jasmine.createSpy();
 
       this.bloodhound = build({ local: fixtures.data.simple }).clear();

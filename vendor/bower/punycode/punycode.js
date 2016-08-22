@@ -272,7 +272,7 @@
 
 		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
 
-			// `Index` is the Index of the next character to be consumed.
+			// `index` is the index of the next character to be consumed.
 			// Decode a generalized variable-length integer into `delta`,
 			// which gets added to `i`. The overflow checking is easier
 			// if we increase `i` as we go, then subtract off its starting

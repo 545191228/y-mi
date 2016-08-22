@@ -124,12 +124,12 @@ class View extends Component
      *
      * The view to be rendered can be specified in one of the following formats:
      *
-     * - path alias (e.g. "@app/views/site/Index");
-     * - absolute path within application (e.g. "//site/Index"): the view name starts with double slashes.
+     * - path alias (e.g. "@app/views/site/index");
+     * - absolute path within application (e.g. "//site/index"): the view name starts with double slashes.
      *   The actual view file will be looked for under the [[Application::viewPath|view path]] of the application.
-     * - absolute path within current module (e.g. "/site/Index"): the view name starts with a single slash.
+     * - absolute path within current module (e.g. "/site/index"): the view name starts with a single slash.
      *   The actual view file will be looked for under the [[Module::viewPath|view path]] of the [[Controller::module|current module]].
-     * - relative view (e.g. "Index"): the view name does not start with `@` or `/`. The corresponding view file will be
+     * - relative view (e.g. "index"): the view name does not start with `@` or `/`. The corresponding view file will be
      *   looked for under the [[ViewContextInterface::getViewPath()|view path]] of the view `$context`.
      *   If `$context` is not given, it will be looked for under the directory containing the view currently
      *   being rendered (i.e., this happens when rendering a view within another view).
@@ -169,7 +169,7 @@ class View extends Component
             // e.g. "//layouts/main"
             $file = Yii::$app->getViewPath() . DIRECTORY_SEPARATOR . ltrim($view, '/');
         } elseif (strncmp($view, '/', 1) === 0) {
-            // e.g. "/site/Index"
+            // e.g. "/site/index"
             if (Yii::$app->controller !== null) {
                 $file = Yii::$app->controller->module->getViewPath() . DIRECTORY_SEPARATOR . ltrim($view, '/');
             } else {

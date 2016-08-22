@@ -17,7 +17,7 @@ $this->title = 'Yii Debugger';
     <div id="yii-debug-toolbar" class="yii-debug-toolbar yii-debug-toolbar_position_top" style="display: none;">
         <div class="yii-debug-toolbar__bar">
             <div class="yii-debug-toolbar__block yii-debug-toolbar__title">
-                <a href="<?= Url::to(['Index']) ?>">
+                <a href="<?= Url::to(['index']) ?>">
                     <img width="29" height="30" alt="" src="<?= \yii\debug\Module::getYiiLogo() ?>">
                 </a>
             </div>
@@ -77,7 +77,7 @@ $this->title = 'Yii Debugger';
                         echo ButtonGroup::widget([
                             'options'=>['class'=>'btn-group-sm'],
                             'buttons' => [
-                                Html::a('All', ['Index'], ['class' => 'btn btn-default']),
+                                Html::a('All', ['index'], ['class' => 'btn btn-default']),
                                 Html::a('Latest', ['view', 'panel' => $activePanel->id], ['class' => 'btn btn-default']),
                                 ButtonDropdown::widget([
                                     'label' => 'Last 10',

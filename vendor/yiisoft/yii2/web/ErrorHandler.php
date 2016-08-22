@@ -288,7 +288,7 @@ class ErrorHandler extends \yii\base\ErrorHandler
             'line' => $line,
             'class' => $class,
             'method' => $method,
-            'Index' => $index,
+            'index' => $index,
             'lines' => $lines,
             'begin' => $begin,
             'end' => $end,

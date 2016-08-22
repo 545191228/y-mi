@@ -32,7 +32,7 @@ class DefaultController extends Controller
     {
         $this->layout = 'main';
 
-        return $this->render('Index');
+        return $this->render('index');
     }
 
     public function actionView($id)

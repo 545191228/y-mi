@@ -261,7 +261,7 @@ class BaseArrayHelper
      *     ['id' => '345', 'data' => 'def', 'device' => 'tablet'],
      *     ['id' => '345', 'data' => 'hgi', 'device' => 'smartphone'],
      * ];
-     * $result = ArrayHelper::Index($array, 'id');
+     * $result = ArrayHelper::index($array, 'id');
      * ```
      *
      * The result will be an associative array, where the key is the value of `id` attribute
@@ -277,7 +277,7 @@ class BaseArrayHelper
      * An anonymous function can be used in the grouping array as well.
      *
      * ```php
-     * $result = ArrayHelper::Index($array, function ($element) {
+     * $result = ArrayHelper::index($array, function ($element) {
      *     return $element['id'];
      * });
      * ```
@@ -285,7 +285,7 @@ class BaseArrayHelper
      * Passing `id` as a third argument will group `$array` by `id`:
      *
      * ```php
-     * $result = ArrayHelper::Index($array, null, 'id');
+     * $result = ArrayHelper::index($array, null, 'id');
      * ```
      *
      * The result will be a multidimensional array grouped by `id` on the first level, by `device` on the second level
@@ -296,7 +296,7 @@ class BaseArrayHelper
      *     '123' => [
      *         ['id' => '123', 'data' => 'abc', 'device' => 'laptop']
      *     ],
-     *     '345' => [ // all elements with this Index are present in the result array
+     *     '345' => [ // all elements with this index are present in the result array
      *         ['id' => '345', 'data' => 'def', 'device' => 'tablet'],
      *         ['id' => '345', 'data' => 'hgi', 'device' => 'smartphone'],
      *     ]
@@ -306,7 +306,7 @@ class BaseArrayHelper
      * The anonymous function can be used in the array of grouping keys as well:
      *
      * ```php
-     * $result = ArrayHelper::Index($array, 'data', [function ($element) {
+     * $result = ArrayHelper::index($array, 'data', [function ($element) {
      *     return $element['id'];
      * }, 'device']);
      * ```
@@ -333,7 +333,7 @@ class BaseArrayHelper
      * ```
      *
      * @param array $array the array that needs to be indexed or grouped
-     * @param string|\Closure|null $key the column name or anonymous function which result will be used to Index the array
+     * @param string|\Closure|null $key the column name or anonymous function which result will be used to index the array
      * @param string|string[]|\Closure[]|null $groups the array of keys, that will be used to group the input array
      * by one or more keys. If the $key attribute or its value for the particular element is null and $groups is not
      * defined, the array element will be discarded. Otherwise, if $groups is specified, array element will be added

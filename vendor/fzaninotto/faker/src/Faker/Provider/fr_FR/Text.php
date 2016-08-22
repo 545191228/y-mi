@@ -13882,7 +13882,7 @@ quarante ans d'une existence laborieuse et irréprochable.
 
 Il fronça les sourcils dès la porte, en apercevant la face
 cadavéreuse d'Emma, étendue sur le dos, la bouche ouverte. Puis,
-tout en ayant l'air d'écouter Canivet, il se passait l'Index sous
+tout en ayant l'air d'écouter Canivet, il se passait l'index sous
 les narines et répétait:
 
 -- C'est bien, c'est bien.

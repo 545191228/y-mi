@@ -175,10 +175,10 @@ class QueryBuilder extends \yii\db\QueryBuilder
     }
 
     /**
-     * Builds a SQL statement for dropping an Index.
-     * @param string $name the name of the Index to be dropped. The name will be properly quoted by the method.
-     * @param string $table the table whose Index is to be dropped. The name will be properly quoted by the method.
-     * @return string the SQL statement for dropping an Index.
+     * Builds a SQL statement for dropping an index.
+     * @param string $name the name of the index to be dropped. The name will be properly quoted by the method.
+     * @param string $table the table whose index is to be dropped. The name will be properly quoted by the method.
+     * @return string the SQL statement for dropping an index.
      */
     public function dropIndex($name, $table)
     {

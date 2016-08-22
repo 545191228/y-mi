@@ -35,7 +35,7 @@ class ListView extends BaseListView
      *
      * - `$model`: mixed, the data model
      * - `$key`: mixed, the key value associated with the data item
-     * - `$Index`: integer, the zero-based Index of the data item in the items array returned by [[dataProvider]].
+     * - `$index`: integer, the zero-based index of the data item in the items array returned by [[dataProvider]].
      * - `$widget`: ListView, this widget instance
      *
      * Note that the view name is resolved into the view file by the current context of the [[view]] object.
@@ -43,7 +43,7 @@ class ListView extends BaseListView
      * If this property is specified as a callback, it should have the following signature:
      *
      * ```php
-     * function ($model, $key, $Index, $widget)
+     * function ($model, $key, $index, $widget)
      * ```
      */
     public $itemView;
@@ -84,7 +84,7 @@ class ListView extends BaseListView
      * Renders a single data model.
      * @param mixed $model the data model to be rendered
      * @param mixed $key the key value associated with the data model
-     * @param integer $index the zero-based Index of the data model in the model array returned by [[dataProvider]].
+     * @param integer $index the zero-based index of the data model in the model array returned by [[dataProvider]].
      * @return string the rendering result
      */
     public function renderItem($model, $key, $index)
@@ -95,7 +95,7 @@ class ListView extends BaseListView
             $content = $this->getView()->render($this->itemView, array_merge([
                 'model' => $model,
                 'key' => $key,
-                'Index' => $index,
+                'index' => $index,
                 'widget' => $this,
             ], $this->viewParams));
         } else {

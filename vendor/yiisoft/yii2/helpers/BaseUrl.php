@@ -32,31 +32,31 @@ class BaseUrl
      *
      * This method will use [[\yii\web\UrlManager]] to create a URL.
      *
-     * You may specify the route as a string, e.g., `site/Index`. You may also use an array
+     * You may specify the route as a string, e.g., `site/index`. You may also use an array
      * if you want to specify additional query parameters for the URL being created. The
      * array format must be:
      *
      * ```php
-     * // generates: /Index.php?r=site/Index&param1=value1&param2=value2
-     * ['site/Index', 'param1' => 'value1', 'param2' => 'value2']
+     * // generates: /index.php?r=site/index&param1=value1&param2=value2
+     * ['site/index', 'param1' => 'value1', 'param2' => 'value2']
      * ```
      *
      * If you want to create a URL with an anchor, you can use the array format with a `#` parameter.
      * For example,
      *
      * ```php
-     * // generates: /Index.php?r=site/Index&param1=value1#name
-     * ['site/Index', 'param1' => 'value1', '#' => 'name']
+     * // generates: /index.php?r=site/index&param1=value1#name
+     * ['site/index', 'param1' => 'value1', '#' => 'name']
      * ```
      *
-     * A route may be either absolute or relative. An absolute route has a leading slash (e.g. `/site/Index`),
-     * while a relative route has none (e.g. `site/Index` or `Index`). A relative route will be converted
+     * A route may be either absolute or relative. An absolute route has a leading slash (e.g. `/site/index`),
+     * while a relative route has none (e.g. `site/index` or `index`). A relative route will be converted
      * into an absolute one by the following rules:
      *
      * - If the route is an empty string, the current [[\yii\web\Controller::route|route]] will be used;
-     * - If the route contains no slashes at all (e.g. `Index`), it is considered to be an action ID
+     * - If the route contains no slashes at all (e.g. `index`), it is considered to be an action ID
      *   of the current controller and will be prepended with [[\yii\web\Controller::uniqueId]];
-     * - If the route has no leading slash (e.g. `site/Index`), it is considered to be a route relative
+     * - If the route has no leading slash (e.g. `site/index`), it is considered to be a route relative
      *   to the current module and will be prepended with the module's [[\yii\base\Module::uniqueId|uniqueId]].
      *
      * Starting from version 2.0.2, a route can also be specified as an alias. In this case, the alias
@@ -65,24 +65,24 @@ class BaseUrl
      * Below are some examples of using this method:
      *
      * ```php
-     * // /Index.php?r=site%2Findex
-     * echo Url::toRoute('site/Index');
+     * // /index.php?r=site%2Findex
+     * echo Url::toRoute('site/index');
      *
-     * // /Index.php?r=site%2Findex&src=ref1#name
-     * echo Url::toRoute(['site/Index', 'src' => 'ref1', '#' => 'name']);
+     * // /index.php?r=site%2Findex&src=ref1#name
+     * echo Url::toRoute(['site/index', 'src' => 'ref1', '#' => 'name']);
      *
      * // http://www.example.com/Index.php?r=site%2Findex
-     * echo Url::toRoute('site/Index', true);
+     * echo Url::toRoute('site/index', true);
      *
      * // https://www.example.com/Index.php?r=site%2Findex
-     * echo Url::toRoute('site/Index', 'https');
+     * echo Url::toRoute('site/index', 'https');
      *
-     * // /Index.php?r=post%2Findex     assume the alias "@posts" is defined as "post/Index"
+     * // /index.php?r=post%2Findex     assume the alias "@posts" is defined as "post/index"
      * echo Url::toRoute('@posts');
      * ```
      *
-     * @param string|array $route use a string to represent a route (e.g. `Index`, `site/Index`),
-     * or an array to represent a route with query parameters (e.g. `['site/Index', 'param1' => 'value1']`).
+     * @param string|array $route use a string to represent a route (e.g. `index`, `site/index`),
+     * or an array to represent a route with query parameters (e.g. `['site/index', 'param1' => 'value1']`).
      * @param boolean|string $scheme the URI scheme to use in the generated URL:
      *
      * - `false` (default): generating a relative URL.
@@ -153,7 +153,7 @@ class BaseUrl
      * In particular, if `$url` is
      *
      * - an array: [[toRoute()]] will be called to generate the URL. For example:
-     *   `['site/Index']`, `['post/Index', 'page' => 2]`. Please refer to [[toRoute()]] for more details
+     *   `['site/index']`, `['post/index', 'page' => 2]`. Please refer to [[toRoute()]] for more details
      *   on how to specify a route.
      * - a string with a leading `@`: it is treated as an alias, and the corresponding aliased string
      *   will be returned.
@@ -167,13 +167,13 @@ class BaseUrl
      * Below are some examples of using this method:
      *
      * ```php
-     * // /Index.php?r=site%2Findex
-     * echo Url::to(['site/Index']);
+     * // /index.php?r=site%2Findex
+     * echo Url::to(['site/index']);
      *
-     * // /Index.php?r=site%2Findex&src=ref1#name
-     * echo Url::to(['site/Index', 'src' => 'ref1', '#' => 'name']);
+     * // /index.php?r=site%2Findex&src=ref1#name
+     * echo Url::to(['site/index', 'src' => 'ref1', '#' => 'name']);
      *
-     * // /Index.php?r=post%2Findex     assume the alias "@posts" is defined as "/post/Index"
+     * // /index.php?r=post%2Findex     assume the alias "@posts" is defined as "/post/index"
      * echo Url::to(['@posts']);
      *
      * // the currently requested URL
@@ -361,13 +361,13 @@ class BaseUrl
      * ```php
      * // assume $_GET = ['id' => 123, 'src' => 'google'], current route is "post/view"
      *
-     * // /Index.php?r=post%2Fview&id=123&src=google
+     * // /index.php?r=post%2Fview&id=123&src=google
      * echo Url::current();
      *
-     * // /Index.php?r=post%2Fview&id=123
+     * // /index.php?r=post%2Fview&id=123
      * echo Url::current(['src' => null]);
      *
-     * // /Index.php?r=post%2Fview&id=100&src=google
+     * // /index.php?r=post%2Fview&id=100&src=google
      * echo Url::current(['id' => 100]);
      * ```
      *

@@ -424,7 +424,7 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
                 new HTMLPurifier_AttrDef_Enum(array('auto')),
             )
         );
-        $this->info['z-Index'] = new HTMLPurifier_AttrDef_CSS_Composite(
+        $this->info['z-index'] = new HTMLPurifier_AttrDef_CSS_Composite(
             array(
                 new HTMLPurifier_AttrDef_Integer(),
                 new HTMLPurifier_AttrDef_Enum(array('auto')),

@@ -29,7 +29,7 @@ class HTMLPurifier_Zipper
 
     /**
      * Creates a zipper from an array, with a hole in the
-     * 0-Index position.
+     * 0-index position.
      * @param Array to zipper-ify.
      * @return Tuple of zipper and element of first position.
      */
@@ -134,7 +134,7 @@ class HTMLPurifier_Zipper
      *      assert($old1 === $old2);
      *      assert($arr1 === $arr2);
      *
-     * NB: the absolute Index location after this operation is
+     * NB: the absolute index location after this operation is
      * *unchanged!*
      *
      * @param Current contents of hole.

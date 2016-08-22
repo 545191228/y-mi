@@ -517,14 +517,14 @@ class QueryBuilder extends \yii\base\Object
     }
 
     /**
-     * Builds a SQL statement for creating a new Index.
-     * @param string $name the name of the Index. The name will be properly quoted by the method.
-     * @param string $table the table that the new Index will be created for. The table name will be properly quoted by the method.
-     * @param string|array $columns the column(s) that should be included in the Index. If there are multiple columns,
+     * Builds a SQL statement for creating a new index.
+     * @param string $name the name of the index. The name will be properly quoted by the method.
+     * @param string $table the table that the new index will be created for. The table name will be properly quoted by the method.
+     * @param string|array $columns the column(s) that should be included in the index. If there are multiple columns,
      * separate them with commas or use an array to represent them. Each column name will be properly quoted
      * by the method, unless a parenthesis is found in the name.
-     * @param boolean $unique whether to add UNIQUE constraint on the created Index.
-     * @return string the SQL statement for creating a new Index.
+     * @param boolean $unique whether to add UNIQUE constraint on the created index.
+     * @return string the SQL statement for creating a new index.
      */
     public function createIndex($name, $table, $columns, $unique = false)
     {
@@ -535,10 +535,10 @@ class QueryBuilder extends \yii\base\Object
     }
 
     /**
-     * Builds a SQL statement for dropping an Index.
-     * @param string $name the name of the Index to be dropped. The name will be properly quoted by the method.
-     * @param string $table the table whose Index is to be dropped. The name will be properly quoted by the method.
-     * @return string the SQL statement for dropping an Index.
+     * Builds a SQL statement for dropping an index.
+     * @param string $name the name of the index to be dropped. The name will be properly quoted by the method.
+     * @param string $table the table whose index is to be dropped. The name will be properly quoted by the method.
+     * @return string the SQL statement for dropping an index.
      */
     public function dropIndex($name, $table)
     {

@@ -65,7 +65,7 @@ class DbSession extends MultiFieldSession
      * - PostgreSQL: BYTEA
      * - MSSQL: BLOB
      *
-     * When using DbSession in a production server, we recommend you create a DB Index for the 'expire'
+     * When using DbSession in a production server, we recommend you create a DB index for the 'expire'
      * column in the session table to improve the performance.
      *
      * Note that according to the php.ini setting of `session.hash_function`, you may need to adjust
