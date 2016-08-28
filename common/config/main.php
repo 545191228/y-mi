@@ -31,7 +31,7 @@ return [
         ],
         */
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => '/site/error',
         ],
     ],
     'id' => 'ymi-common',
@@ -51,5 +51,22 @@ return [
             'class' => 'yii\gii\Module',
         ],
     ],
-    //'params' => $params,
+    //'language' => 'zh',
+    //'charset' => 'UTF-8',
+    //'timeZone' => 'America/Los_Angeles',
+    /*'params' => [
+        'thumbnail.size' => [128, 128],
+    ],*/
+    //'version' => 'v1.0',
+    /*'extensions' => [
+        [
+            'name' => 'extension name',
+            'version' => 'version number',
+            'bootstrap' => 'BootstrapClassName',  // 可选配，可为配置数组
+            'alias' => [  // 可选配
+                '@alias1' => 'to/path1',
+                '@alias2' => 'to/path2',
+            ],
+        ],
+    ],*/
 ];
