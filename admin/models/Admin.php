@@ -8,6 +8,6 @@ class Admin extends ActiveRecord
 {
     public static function tableName()
     {
-        return parent::tableName('ymi_admin');
+        return parent::tableName('admin');
     }
 }

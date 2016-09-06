@@ -23,6 +23,7 @@ return [
             'dsn' => 'mysql:host=localhost;dbname=y-mi',
             'username' => 'root',
             'password' => 'root',
+            'tablePrefix' => 'ymi_',
             'charset' => 'utf8',
         ],
         /*'mailer' => [
