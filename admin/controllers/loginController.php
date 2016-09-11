@@ -17,9 +17,10 @@ class LoginController extends Controller{
      */
     public function actionIndex(){
         //if(true){}
-        
+        $list = Admin::findOne(1);
+        var_dump($list);exit;
         return $this->renderPartial('login');
     }
-
+    
 
 }

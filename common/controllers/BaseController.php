@@ -13,5 +13,7 @@ class BaseController extends Controller{
     public function actionError(){
         exit('error');
     }
+
+    public function actionCheckLogin(){}
     
 }
