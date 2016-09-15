@@ -19,7 +19,7 @@ AppAsset::register($this);
 
 <?= $content ?>
 
-<?php $this->endBidy() ?>
+<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage();?>

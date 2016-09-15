@@ -1,1 +1,0 @@
-admin/index/index2

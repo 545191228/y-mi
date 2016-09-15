@@ -4,6 +4,7 @@ namespace admin\controllers;
 use Yii;
 use yii\web\Controller;
 use admin\models\Admin;
+use admin\models\formes\AdminLoginForm;
 
 class LoginController extends Controller{
     function init()
@@ -17,9 +18,11 @@ class LoginController extends Controller{
      */
     public function actionIndex(){
         //if(true){}
-        $list = Admin::findOne(1);
-        var_dump($list);exit;
-        return $this->renderPartial('login');
+        //$list = Admin::findOne(1);
+        //var_dump($list);exit;
+        if(){}
+        $model = new AdminLoginForm();
+        return $this->renderPartial('login',['model'=>$model]);
     }
     
 

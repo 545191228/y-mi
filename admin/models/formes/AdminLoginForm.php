@@ -3,7 +3,7 @@
 /**
  * 后台管理员登录表单
  */
-namespace admin\models\forms;
+namespace admin\models\formes;
 
 use Yii;
 use yii\base\Model;
