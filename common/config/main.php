@@ -15,9 +15,9 @@ return [
                 ],
             ],
         ],
-        /*'cache' => [
+        'cache' => [
             'class' => 'yii\caching\FileCache',
-        ],*/
+        ],
          'db' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=y-mi',
