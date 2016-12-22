@@ -5,7 +5,14 @@ return [
     'controllerNamespace' => 'console\controllers',
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-console',
+        ],
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=y-mi',
+            'username' => 'root',
+            'password' => 'root',
+            'tablePrefix' => 'ymi_',
+            'charset' => 'utf8',
         ],
     ],
 ];

@@ -24,6 +24,5 @@ class LoginController extends BaseController{
         $model = new AdminLoginForm();
         return $this->renderPartial('login',['model'=>$model]);
     }
-    
 
 }
