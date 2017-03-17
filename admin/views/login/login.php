@@ -6,9 +6,10 @@ use yii\widgets\ActiveForm;
 
 <?php $this->beginPage(); ?>
 <!DOCTYPE HTML>
-<html>
+<html lang="zh-cn">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/ymi.admin-login.css" rel="stylesheet" type="text/css" media="all"/>
 	<title>Y-MI管理系统</title>
